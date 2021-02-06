@@ -1,0 +1,511 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:47:09 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 7540
+License: Customer
+
+Current time: 	Sun Jan 24 17:05:34 CST 2021
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: CentOS Linux release 7.9.2009 (Core)
+OS Version: 3.10.0-1160.6.1.el7.x86_64
+OS Architecture: amd64
+Available processors (cores): 8
+
+Display: :0
+Screen size: 2558x1318
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 15 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/home/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4
+Java executable location: 	/home/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	ICer
+User home directory: /home/ICer
+User working directory: /home/ICer/ic_prjs/e203_MOD/fpga/artydevkit
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: /home/Xilinx/Vivado
+HDI_APPROOT: /home/Xilinx/Vivado/2019.1
+RDI_DATADIR: /home/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: /home/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: /home/ICer/.Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: /home/ICer/.Xilinx/Vivado/2019.1/
+Vivado layouts directory: /home/ICer/.Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	/home/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/vivado.log
+Vivado journal file location: 	
+Engine tmp dir: 	./.Xil/Vivado-7540-localhost.localdomain
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /home/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: /home/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: /home/Xilinx/Vivado/2019.1
+XILINX_SDK: /home/Xilinx/SDK/2019.1
+XILINX_VIVADO: /home/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: /home/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	240 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 5,122 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: START_PROGRESS_DIALOG
+// TclEventType: STOP_PROGRESS_DIALOG
+// by (cl):  Sourcing Tcl script 'script/board.tcl' : addNotify
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: START_PROGRESS_DIALOG
+// Tcl Message: source script/board.tcl 
+// Tcl Message: # set name {arty_e200devkit} # set part_fpga {xc7a35ticsg324-1L} # set part_board {digilentinc.com:arty-a7-35:part0:1.0} # set bootrom_inst {rom} 
+// TclEventType: START_PROGRESS_DIALOG
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// by (cl):  Sourcing Tcl script 'script/prologue_setup.tcl' : addNotify
+dismissDialog("Sourcing Tcl script 'script/board.tcl'"); // by (cl)
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: source script/prologue_setup.tcl 
+// Tcl Message: # set scriptdir [file dirname [info script]] # set commondir [file dirname $scriptdir] # set srcdir [file join $commondir src] # set constrsdir [file join $commondir constrs] # set wrkdir [file join [pwd] obj] # set ipdir [file join $wrkdir ip] # set top {system} # create_project e200_fpga_proj $wrkdir -part $part_fpga -force  
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 116 MB (+118656kb) [00:00:09]
+// [Engine Memory]: 5,113 MB (+5209983kb) [00:00:09]
+// WARNING: HEventQueue.dispatchEvent() is taking  2757 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/Xilinx/Vivado/2019.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,132 MB. GUI used memory: 57 MB. Current time: 1/24/21, 5:05:34 PM CST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: BOARD_MODIFIED
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:06 . Memory (MB): peak = 6541.176 ; gain = 83.117 ; free physical = 9644 ; free virtual = 21471 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: STOP_PROGRESS_DIALOG
+// Tcl Message: # if {[get_filesets -quiet sim_1] eq ""} { #   create_fileset -simset sim_1 # } # set obj [current_fileset -simset] # add_files -norecurse -fileset $obj [glob -directory $srcdir {*.v}] # set_property TOP {tb} $obj # if {[get_filesets -quiet constrs_1] eq ""} { #   create_fileset -constrset constrs_1 # } # set obj [current_fileset -constrset] # add_files -norecurse -fileset $obj [glob -directory $constrsdir {*.xdc}] 
+// Elapsed time: 12 seconds
+dismissDialog("Sourcing Tcl script 'script/prologue_setup.tcl'"); // by (cl)
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: START_PROGRESS_DIALOG
+// TclEventType: CREATE_IP_CATALOG
+// by (cl):  Sourcing Tcl script 'script/init_setup.tcl' : addNotify
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: CREATE_IP_CORE
+// TclEventType: LOAD_FEATURE
+// Tcl Message: source script/init_setup.tcl 
+// Tcl Message: # proc recglob { basedir pattern } { #   set dirlist [glob -nocomplain -directory $basedir -type d *] #   set findlist [glob -nocomplain -directory $basedir $pattern] #   foreach dir $dirlist { #     set reclist [recglob $dir $pattern] #     set findlist [concat $findlist $reclist] #   } #   return $findlist # } # proc findincludedir { basedir pattern } { #   #find all subdirectories containing ".vh" files #   set vhfiles [recglob $basedir $pattern] #   set vhdirs {} #   foreach match $vhfiles { #     lappend vhdirs [file dir $match] #   } #   set uniquevhdirs [lsort -unique $vhdirs] #   return $uniquevhdirs # } # file mkdir $ipdir # update_ip_catalog -rebuild 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip'. 
+// Tcl Message: # source [file join $scriptdir ip.tcl] ## create_ip -vendor xilinx.com -library ip -name clk_wiz -module_name mmcm -dir $ipdir -force 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: CREATE_IP_CORE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: # set obj [get_ips] # generate_target all $obj 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mmcm'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mmcm'... 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mmcm'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'mmcm'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mmcm'... INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'reset_sys'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'reset_sys'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'reset_sys'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'reset_sys'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'reset_sys'... 
+// Tcl Message: # export_ip_user_files -of_objects $obj -no_script -force # set obj [current_fileset] # set property_include_dirs [get_property include_dirs $obj] # set ip_include_dirs [concat $property_include_dirs [findincludedir $ipdir "*.vh"]] # set ip_include_dirs [concat $ip_include_dirs [findincludedir $srcdir "*.h"]] # set ip_include_dirs [concat $ip_include_dirs [findincludedir $srcdir "*.vh"]] # read_ip [glob -directory $ipdir [file join * {*.xci}]] 
+// Tcl Message: # synth_design -include_dirs ${wrkdir}/../../install/rtl/core/ -top $top  -rtl 
+// Tcl Message: Command: synth_design -include_dirs /home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/../../install/rtl/core/ -top system -rtl Starting synth_design Using part: xc7a35ticsg324-1L 
+// TclEventType: ELABORATE_START
+// HMemoryUtils.trashcanNow. Engine heap size: 5,349 MB. GUI used memory: 60 MB. Current time: 1/24/21, 5:05:54 PM CST
+// [Engine Memory]: 5,427 MB (+60977kb) [00:00:32]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,631 MB. GUI used memory: 58 MB. Current time: 1/24/21, 5:06:09 PM CST
+// Elapsed time: 32 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (by)
+// [Engine Memory]: 5,725 MB (+28086kb) [00:00:52]
+// TclEventType: ELABORATE_FINISH
+// HMemoryUtils.trashcanNow. Engine heap size: 5,734 MB. GUI used memory: 58 MB. Current time: 1/24/21, 5:06:24 PM CST
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 5,880 MB. GUI used memory: 58 MB. Current time: 1/24/21, 5:06:28 PM CST
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: /home/Xilinx/Vivado/2019.1/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_detail.xgd elapsed time: 1s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.6s
+// Schematic: addNotify
+// [GUI Memory]: 139 MB (+18237kb) [00:01:08]
+// WARNING: HEventQueue.dispatchEvent() is taking  2915 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35ticsg324-1L 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 6915.840 ; gain = 139.816 ; free physical = 9277 ; free virtual = 21103 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'system' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/system.v:3] INFO: [Synth 8-6157] synthesizing module 'mmcm' [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/mmcm/mmcm.v:71] INFO: [Synth 8-6157] synthesizing module 'mmcm_clk_wiz' [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/mmcm/mmcm_clk_wiz.v:69] INFO: [Synth 8-6157] synthesizing module 'IBUF' [/home/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856] 
+// Tcl Message: 	Parameter CAPACITANCE bound to: DONT_CARE - type: string  	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string  	Parameter IBUF_LOW_PWR bound to: TRUE - type: string  	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string  	Parameter IOSTANDARD bound to: DEFAULT - type: string  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [/home/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856] INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [/home/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813] 
+// Tcl Message: 	Parameter C_FAMILY bound to: artix7 - type: string  	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer  	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer  	Parameter C_EXT_RESET_HIGH bound to: 1'b0  	Parameter C_AUX_RESET_HIGH bound to: 1'b0  	Parameter C_NUM_BUS_RST bound to: 1 - type: integer  	Parameter C_NUM_PERP_RST bound to: 1 - type: integer  	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer  	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/reset_sys/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/reset_sys/synth/reset_sys.vhd:129] INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/reset_sys/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323] 
+// Tcl Message: 	Parameter C_FAMILY bound to: artix7 - type: string  	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer  	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer  	Parameter C_EXT_RESET_HIGH bound to: 1'b0  	Parameter C_AUX_RESET_HIGH bound to: 1'b0  	Parameter C_NUM_BUS_RST bound to: 1 - type: integer  	Parameter C_NUM_PERP_RST bound to: 1 - type: integer  	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer  	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer  	Parameter INIT bound to: 1'b1  	Parameter IS_C_INVERTED bound to: 1'b0  	Parameter IS_D_INVERTED bound to: 1'b0  	Parameter IS_R_INVERTED bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/reset_sys/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392] 
+// Tcl Message: 	Parameter INIT bound to: 1'b1  	Parameter IS_C_INVERTED bound to: 1'b0  	Parameter IS_D_INVERTED bound to: 1'b0  	Parameter IS_R_INVERTED bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/reset_sys/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  	Parameter IS_C_INVERTED bound to: 1'b0  	Parameter IS_D_INVERTED bound to: 1'b0  	Parameter IS_R_INVERTED bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/reset_sys/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434] 
+// Tcl Message: 	Parameter INIT bound to: 1'b1  	Parameter IS_C_INVERTED bound to: 1'b0  	Parameter IS_D_INVERTED bound to: 1'b0  	Parameter IS_R_INVERTED bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/reset_sys/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  	Parameter IS_C_INVERTED bound to: 1'b0  	Parameter IS_D_INVERTED bound to: 1'b0  	Parameter IS_R_INVERTED bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/reset_sys/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481] INFO: [Synth 8-638] synthesizing module 'lpf' [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/reset_sys/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816] 
+// Tcl Message: 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer  	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer  	Parameter C_EXT_RESET_HIGH bound to: 1'b0  	Parameter C_AUX_RESET_HIGH bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-3491] module 'SRL16' declared at '/home/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77684' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/reset_sys/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868] INFO: [Synth 8-6157] synthesizing module 'SRL16' [/home/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77684] 
+// Tcl Message: 	Parameter INIT bound to: 16'b0000000000000000  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'SRL16' (7#1) [/home/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77684] INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/reset_sys/hdl/lib_cdc_v1_0_rfs.vhd:106] 
+// Tcl Message: 	Parameter C_CDC_TYPE bound to: 1 - type: integer  	Parameter C_RESET_STATE bound to: 0 - type: integer  	Parameter C_SINGLE_BIT bound to: 1 - type: integer  	Parameter C_FLOP_INPUT bound to: 0 - type: integer  	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer  	Parameter C_MTBF_STAGES bound to: 4 - type: integer  	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/reset_sys/hdl/lib_cdc_v1_0_rfs.vhd:514] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/reset_sys/hdl/lib_cdc_v1_0_rfs.vhd:545] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/reset_sys/hdl/lib_cdc_v1_0_rfs.vhd:554] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/reset_sys/hdl/lib_cdc_v1_0_rfs.vhd:564] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/reset_sys/hdl/lib_cdc_v1_0_rfs.vhd:574] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: 	Parameter C_SIZE bound to: 6 - type: integer  
+// Tcl Message: 	Parameter DRIVE bound to: 12 - type: integer  	Parameter IBUF_LOW_PWR bound to: TRUE - type: string  	Parameter IOSTANDARD bound to: DEFAULT - type: string  	Parameter SLEW bound to: SLOW - type: string  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (15#1) [/home/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115] INFO: [Synth 8-6157] synthesizing module 'IOBUF__parameterized0' [/home/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115] 
+// Tcl Message: 	Parameter DRIVE bound to: 12 - type: integer  	Parameter IBUF_LOW_PWR bound to: TRUE - type: string  	Parameter IOSTANDARD bound to: DEFAULT - type: string  	Parameter SLEW bound to: SLOW - type: string  
+// Tcl Message: 	Parameter RST_SYNC_LEVEL bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_hclkgen_rstsync' (20#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/subsys/e203_subsys_hclkgen_rstsync.v:29] INFO: [Synth 8-6157] synthesizing module 'e203_subsys_pllclkdiv' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/subsys/e203_subsys_pllclkdiv.v:31] INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:87] 
+// Tcl Message: 	Parameter DW bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr' (21#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:87] INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized0' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:87] 
+// Tcl Message: 	Parameter DW bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized0' (21#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:87] INFO: [Synth 8-6157] synthesizing module 'e203_clkgate' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/core/e203_clkgate.v:28] INFO: [Synth 8-6155] done synthesizing module 'e203_clkgate' (22#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/core/e203_clkgate.v:28] INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_pllclkdiv' (23#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/subsys/e203_subsys_pllclkdiv.v:31] INFO: [Synth 8-6157] synthesizing module 'e203_subsys_gfcm' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/subsys/e203_subsys_gfcm.v:31] 
+// Tcl Message: 	Parameter SYNC_LEVEL bound to: 3 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_gfcm' (24#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/subsys/e203_subsys_gfcm.v:31] INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_hclkgen' (25#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/subsys/e203_subsys_hclkgen.v:31] INFO: [Synth 8-6157] synthesizing module 'e203_cpu_top' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/core/e203_cpu_top.v:30] INFO: [Synth 8-6157] synthesizing module 'e203_cpu' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/core/e203_cpu.v:30] 
+// Tcl Message: 	Parameter MASTER bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'e203_reset_ctrl' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/core/e203_reset_ctrl.v:29] 
+// Tcl Message: 	Parameter MASTER bound to: 1 - type: integer  	Parameter RST_SYNC_LEVEL bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'e203_reset_ctrl' (26#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/core/e203_reset_ctrl.v:29] INFO: [Synth 8-6157] synthesizing module 'e203_clk_ctrl' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/core/e203_clk_ctrl.v:30] INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffr' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:209] 
+// Tcl Message: 	Parameter DW bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffr' (27#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:209] INFO: [Synth 8-6155] done synthesizing module 'e203_clk_ctrl' (28#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/core/e203_clk_ctrl.v:30] INFO: [Synth 8-6157] synthesizing module 'e203_irq_sync' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/core/e203_irq_sync.v:29] 
+// Tcl Message: 	Parameter MASTER bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_sync' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_bufs.v:99] 
+// Tcl Message: 	Parameter DP bound to: 2 - type: integer  	Parameter DW bound to: 1 - type: integer  
+// Tcl Message: 	Parameter DW bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffrs' (32#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:177] INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized1' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:87] 
+// Tcl Message: 	Parameter DW bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized1' (32#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:87] INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized2' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:87] 
+// Tcl Message: 	Parameter DW bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized2' (32#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:87] INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized3' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:87] 
+// Tcl Message: 	Parameter DW bound to: 32 - type: integer  
+// Tcl Message: 	Parameter ICB_STATE_WIDTH bound to: 2 - type: integer  	Parameter ICB_STATE_IDLE bound to: 2'b00  	Parameter ICB_STATE_1ST bound to: 2'b01  	Parameter ICB_STATE_WAIT2ND bound to: 2'b10  	Parameter ICB_STATE_2ND bound to: 2'b11  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_bypbuf' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_bufs.v:306] 
+// Tcl Message: 	Parameter DP bound to: 1 - type: integer  	Parameter DW bound to: 33 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_fifo' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_bufs.v:381] 
+// Tcl Message: 	Parameter CUT_READY bound to: 1 - type: integer  	Parameter MSKO bound to: 0 - type: integer  	Parameter DP bound to: 1 - type: integer  	Parameter DW bound to: 33 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:133] 
+// Tcl Message: 	Parameter DW bound to: 33 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl' (37#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:133] INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflrs' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:40] 
+// Tcl Message: 	Parameter DW bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflrs' (38#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:40] INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo' (39#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_bufs.v:381] INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_bypbuf' (40#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_bufs.v:306] INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized4' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:87] 
+// Tcl Message: 	Parameter DW bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized4' (40#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:87] INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized0' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:133] 
+// Tcl Message: 	Parameter DW bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized0' (40#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:133] INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized1' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:133] 
+// Tcl Message: 	Parameter DW bound to: 16 - type: integer  
+// Tcl Message: 	Parameter DW bound to: 32 - type: integer  
+// Tcl Message: 	Parameter DW bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized3' (44#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:133] INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized4' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:133] 
+// Tcl Message: 	Parameter DW bound to: 1 - type: integer  
+// Tcl Message: 	Parameter ICB_STATE_WIDTH bound to: 4 - type: integer  	Parameter ICB_STATE_IDLE bound to: 4'b0000  	Parameter ICB_STATE_1ST bound to: 4'b0001  	Parameter ICB_STATE_WAIT2ND bound to: 4'b0010  	Parameter ICB_STATE_2ND bound to: 4'b0011  	Parameter ICB_STATE_AMOALU bound to: 4'b0100  	Parameter ICB_STATE_AMORDY bound to: 4'b0101  	Parameter ICB_STATE_WBCK bound to: 4'b0110  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized5' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:87] 
+// Tcl Message: 	Parameter DW bound to: 4 - type: integer  
+// Tcl Message: 	Parameter MULDIV_STATE_WIDTH bound to: 3 - type: integer  	Parameter MULDIV_STATE_0TH bound to: 3'b000  	Parameter MULDIV_STATE_EXEC bound to: 3'b001  	Parameter MULDIV_STATE_REMD_CHCK bound to: 3'b010  	Parameter MULDIV_STATE_QUOT_CORR bound to: 3'b011  	Parameter MULDIV_STATE_REMD_CORR bound to: 3'b100  	Parameter EXEC_CNT_W bound to: 6 - type: integer  	Parameter EXEC_CNT_1 bound to: 6'b000001  	Parameter EXEC_CNT_16 bound to: 6'b010000  	Parameter EXEC_CNT_32 bound to: 6'b100000  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized6' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:87] 
+// Tcl Message: 	Parameter DW bound to: 3 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized6' (49#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:87] INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_muldiv' (50#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/core/e203_exu_alu_muldiv.v:32] INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_dpath' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/core/e203_exu_alu_dpath.v:29] 
+// Tcl Message: 	Parameter DPATH_MUX_WIDTH bound to: 85 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_dpath' (51#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/core/e203_exu_alu_dpath.v:29] INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu' (52#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/core/e203_exu_alu.v:32] INFO: [Synth 8-6157] synthesizing module 'e203_exu_longpwbck' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/core/e203_exu_longpwbck.v:30] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'e203_exu_longpwbck' (53#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/core/e203_exu_longpwbck.v:30] INFO: [Synth 8-6157] synthesizing module 'e203_exu_wbck' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/core/e203_exu_wbck.v:30] 
+// Tcl Message: 	Parameter LSU_ARBT_I_NUM bound to: 2 - type: integer  	Parameter LSU_ARBT_I_PTR_W bound to: 1 - type: integer  	Parameter USR_W bound to: 39 - type: integer  	Parameter USR_PACK_EXCL bound to: 0 - type: integer  	Parameter SPLT_FIFO_W bound to: 44 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_arbt' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_icbs.v:37] 
+// Tcl Message: 	Parameter AW bound to: 32 - type: integer  	Parameter DW bound to: 32 - type: integer  	Parameter USR_W bound to: 39 - type: integer  	Parameter ARBT_SCHEME bound to: 0 - type: integer  	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer  	Parameter FIFO_CUT_READY bound to: 0 - type: integer  	Parameter ARBT_NUM bound to: 2 - type: integer  	Parameter ALLOW_0CYCL_RSP bound to: 0 - type: integer  	Parameter ARBT_PTR_W bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_pipe_stage' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_bufs.v:28] 
+// Tcl Message: 	Parameter CUT_READY bound to: 0 - type: integer  	Parameter DP bound to: 1 - type: integer  	Parameter DW bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_pipe_stage' (60#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_bufs.v:28] INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_arbt' (61#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_icbs.v:37] INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_pipe_stage__parameterized0' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_bufs.v:28] 
+// Tcl Message: 	Parameter CUT_READY bound to: 0 - type: integer  	Parameter DP bound to: 1 - type: integer  	Parameter DW bound to: 44 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized5' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:133] 
+// Tcl Message: 	Parameter DW bound to: 44 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized5' (61#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:133] INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_pipe_stage__parameterized0' (61#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_bufs.v:28] INFO: [Synth 8-6155] done synthesizing module 'e203_lsu_ctrl' (62#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/core/e203_lsu_ctrl.v:28] INFO: [Synth 8-6155] done synthesizing module 'e203_lsu' (63#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/core/e203_lsu.v:28] INFO: [Synth 8-6157] synthesizing module 'e203_biu' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/core/e203_biu.v:29] 
+// Tcl Message: 	Parameter BIU_ARBT_I_NUM bound to: 2 - type: integer  	Parameter BIU_ARBT_I_PTR_W bound to: 1 - type: integer  	Parameter BIU_SPLT_I_NUM_0 bound to: 4 - type: integer  	Parameter BIU_SPLT_I_NUM_1 bound to: 5 - type: integer  	Parameter BIU_SPLT_I_NUM_2 bound to: 6 - type: integer  	Parameter BIU_SPLT_I_NUM bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_arbt__parameterized0' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_icbs.v:37] 
+// Tcl Message: 	Parameter AW bound to: 32 - type: integer  	Parameter DW bound to: 32 - type: integer  	Parameter USR_W bound to: 1 - type: integer  	Parameter ARBT_SCHEME bound to: 0 - type: integer  	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer  	Parameter FIFO_CUT_READY bound to: 1 - type: integer  	Parameter ARBT_NUM bound to: 2 - type: integer  	Parameter ALLOW_0CYCL_RSP bound to: 0 - type: integer  	Parameter ARBT_PTR_W bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_pipe_stage__parameterized1' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_bufs.v:28] 
+// Tcl Message: 	Parameter CUT_READY bound to: 1 - type: integer  	Parameter DP bound to: 1 - type: integer  	Parameter DW bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_pipe_stage__parameterized1' (63#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_bufs.v:28] INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_arbt__parameterized0' (63#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_icbs.v:37] INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_buffer' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_icbs.v:351] 
+// Tcl Message: 	Parameter OUTS_CNT_W bound to: 1 - type: integer  	Parameter AW bound to: 32 - type: integer  	Parameter DW bound to: 32 - type: integer  	Parameter CMD_CUT_READY bound to: 1 - type: integer  	Parameter RSP_CUT_READY bound to: 1 - type: integer  	Parameter CMD_DP bound to: 1 - type: integer  	Parameter RSP_DP bound to: 1 - type: integer  	Parameter USR_W bound to: 1 - type: integer  	Parameter CMD_PACK_W bound to: 78 - type: integer  	Parameter RSP_PACK_W bound to: 35 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_fifo__parameterized0' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_bufs.v:381] 
+// Tcl Message: 	Parameter CUT_READY bound to: 1 - type: integer  	Parameter MSKO bound to: 0 - type: integer  	Parameter DP bound to: 1 - type: integer  	Parameter DW bound to: 78 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized6' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:133] 
+// Tcl Message: 	Parameter DW bound to: 78 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized6' (63#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:133] INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo__parameterized0' (63#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_bufs.v:381] INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_fifo__parameterized1' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_bufs.v:381] 
+// Tcl Message: 	Parameter CUT_READY bound to: 1 - type: integer  	Parameter MSKO bound to: 0 - type: integer  	Parameter DP bound to: 1 - type: integer  	Parameter DW bound to: 35 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized7' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:133] 
+// Tcl Message: 	Parameter DW bound to: 35 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized7' (63#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:133] INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo__parameterized1' (63#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_bufs.v:381] INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_buffer' (64#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_icbs.v:351] INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_splt' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_icbs.v:648] 
+// Tcl Message: 	Parameter AW bound to: 32 - type: integer  	Parameter DW bound to: 32 - type: integer  	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer  	Parameter FIFO_CUT_READY bound to: 1 - type: integer  	Parameter SPLT_NUM bound to: 6 - type: integer  	Parameter SPLT_PTR_1HOT bound to: 1 - type: integer  	Parameter SPLT_PTR_W bound to: 6 - type: integer  	Parameter ALLOW_DIFF bound to: 0 - type: integer  	Parameter ALLOW_0CYCL_RSP bound to: 1 - type: integer  	Parameter VLD_MSK_PAYLOAD bound to: 0 - type: integer  	Parameter USR_W bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_pipe_stage__parameterized2' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_bufs.v:28] 
+// Tcl Message: 	Parameter CUT_READY bound to: 1 - type: integer  	Parameter DP bound to: 1 - type: integer  	Parameter DW bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized8' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:133] 
+// Tcl Message: 	Parameter DW bound to: 6 - type: integer  
+// Tcl Message: 	Parameter ITCM_ARBT_I_NUM bound to: 2 - type: integer  	Parameter ITCM_ARBT_I_PTR_W bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_n2w' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_icbs.v:503] 
+// Tcl Message: 	Parameter AW bound to: 16 - type: integer  	Parameter USR_W bound to: 1 - type: integer  	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer  	Parameter FIFO_CUT_READY bound to: 0 - type: integer  	Parameter X_W bound to: 32 - type: integer  	Parameter Y_W bound to: 64 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_n2w' (68#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_icbs.v:503] INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_arbt__parameterized1' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_icbs.v:37] 
+// Tcl Message: 	Parameter AW bound to: 16 - type: integer  	Parameter DW bound to: 64 - type: integer  	Parameter USR_W bound to: 1 - type: integer  	Parameter ARBT_SCHEME bound to: 0 - type: integer  	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer  	Parameter FIFO_CUT_READY bound to: 0 - type: integer  	Parameter ARBT_NUM bound to: 2 - type: integer  	Parameter ALLOW_0CYCL_RSP bound to: 0 - type: integer  	Parameter ARBT_PTR_W bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_arbt__parameterized1' (68#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_icbs.v:37] INFO: [Synth 8-6157] synthesizing module 'sirv_sram_icb_ctrl' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_sram_icb_ctrl.v:29] 
+// Tcl Message: 	Parameter DW bound to: 64 - type: integer  	Parameter MW bound to: 8 - type: integer  	Parameter AW bound to: 16 - type: integer  	Parameter AW_LSB bound to: 3 - type: integer  	Parameter USR_W bound to: 2 - type: integer  	Parameter BUF_CMD_PACK_W bound to: 91 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_bypbuf__parameterized0' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_bufs.v:306] 
+// Tcl Message: 	Parameter DP bound to: 1 - type: integer  	Parameter DW bound to: 91 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_fifo__parameterized2' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_bufs.v:381] 
+// Tcl Message: 	Parameter CUT_READY bound to: 1 - type: integer  	Parameter MSKO bound to: 0 - type: integer  	Parameter DP bound to: 1 - type: integer  	Parameter DW bound to: 91 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized9' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:133] 
+// Tcl Message: 	Parameter DW bound to: 91 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized9' (68#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:133] INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo__parameterized2' (68#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_bufs.v:381] INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_bypbuf__parameterized0' (68#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_bufs.v:306] INFO: [Synth 8-6157] synthesizing module 'sirv_1cyc_sram_ctrl' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_1cyc_sram_ctrl.v:29] 
+// Tcl Message: 	Parameter DW bound to: 64 - type: integer  	Parameter MW bound to: 8 - type: integer  	Parameter AW bound to: 16 - type: integer  	Parameter AW_LSB bound to: 3 - type: integer  	Parameter USR_W bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_pipe_stage__parameterized3' [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_bufs.v:28] 
+// Tcl Message: 	Parameter CUT_READY bound to: 0 - type: integer  	Parameter DP bound to: 1 - type: integer  	Parameter DW bound to: 2 - type: integer  
+// Tcl Message: 	Parameter DTCM_ARBT_I_NUM bound to: 2 - type: integer  	Parameter DTCM_ARBT_I_PTR_W bound to: 1 - type: integer  	Parameter AW bound to: 16 - type: integer  	Parameter DW bound to: 32 - type: integer  	Parameter USR_W bound to: 1 - type: integer  	Parameter ARBT_SCHEME bound to: 0 - type: integer  	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer  	Parameter FIFO_CUT_READY bound to: 0 - type: integer  	Parameter ARBT_NUM bound to: 2 - type: integer  	Parameter ALLOW_0CYCL_RSP bound to: 0 - type: integer  	Parameter ARBT_PTR_W bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_arbt__parameterized2' (71#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_icbs.v:37] 
+// Tcl Message: 	Parameter DW bound to: 32 - type: integer  	Parameter MW bound to: 4 - type: integer  	Parameter AW bound to: 16 - type: integer  	Parameter AW_LSB bound to: 2 - type: integer  	Parameter USR_W bound to: 1 - type: integer  	Parameter BUF_CMD_PACK_W bound to: 54 - type: integer  	Parameter DP bound to: 1 - type: integer  	Parameter DW bound to: 54 - type: integer  	Parameter CUT_READY bound to: 1 - type: integer  	Parameter MSKO bound to: 0 - type: integer  	Parameter DP bound to: 1 - type: integer  	Parameter DW bound to: 54 - type: integer  	Parameter DW bound to: 54 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized10' (71#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_dffs.v:133] INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo__parameterized3' (71#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_bufs.v:381] INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_bypbuf__parameterized1' (71#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_gnrl_bufs.v:306] 
+// Tcl Message: 	Parameter DW bound to: 32 - type: integer  	Parameter MW bound to: 4 - type: integer  	Parameter AW bound to: 16 - type: integer  	Parameter AW_LSB bound to: 2 - type: integer  	Parameter USR_W bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sirv_1cyc_sram_ctrl__parameterized0' (71#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_1cyc_sram_ctrl.v:29] INFO: [Synth 8-6155] done synthesizing module 'sirv_sram_icb_ctrl__parameterized0' (71#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/general/sirv_sram_icb_ctrl.v:29] INFO: [Synth 8-6155] done synthesizing module 'e203_dtcm_ctrl' (72#1) [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/core/e203_dtcm_ctrl.v:31] INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/perips/i2c_master_top.v:215] 
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/debug/sirv_jtag_dtm.v:237] INFO: [Synth 8-155] case statement is not full and has no default [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/debug/sirv_jtag_dtm.v:295] INFO: [Synth 8-155] case statement is not full and has no default [/home/ICer/ic_prjs/e203_MOD/fpga/install/rtl/debug/sirv_jtag_dtm.v:308] 
+// Tcl Message: Reason is one or more of the following : 	1: Write port has constant address.  	2: No valid read/write found for RAM.  	2: Only 1 word in RAM  RAM "ram_read_reg" dissolved into registers 
+// Tcl Message: Reason is one or more of the following : 	1: Write port has constant address.  	2: No valid read/write found for RAM.  	2: Only 1 word in RAM  RAM "ram_index_reg" dissolved into registers 
+// Tcl Message: Reason is one or more of the following : 	1: Write port has constant address.  	2: No valid read/write found for RAM.  	2: Only 1 word in RAM  RAM "ram_data_reg" dissolved into registers 
+// Tcl Message: Reason is one or more of the following : 	1: Write port has constant address.  	2: No valid read/write found for RAM.  	2: Only 1 word in RAM  RAM "ram_mask_reg" dissolved into registers 
+// Tcl Message: Reason is one or more of the following : 	1: Write port has constant address.  	2: No valid read/write found for RAM.  	2: Only 1 word in RAM  RAM "ram_extra_reg" dissolved into registers 
+// Tcl Message: INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 7134.473 ; gain = 358.449 ; free physical = 9158 ; free virtual = 20988 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 7152.281 ; gain = 376.258 ; free physical = 9208 ; free virtual = 21038 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 7152.281 ; gain = 376.258 ; free physical = 9208 ; free virtual = 21038 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 52 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/mmcm/mmcm_board.xdc] for cell 'ip_mmcm/inst' Finished Parsing XDC File [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/mmcm/mmcm_board.xdc] for cell 'ip_mmcm/inst' Parsing XDC File [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/mmcm/mmcm.xdc] for cell 'ip_mmcm/inst' Finished Parsing XDC File [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/mmcm/mmcm.xdc] for cell 'ip_mmcm/inst' 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/mmcm/mmcm.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: Parsing XDC File [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/reset_sys/reset_sys_board.xdc] for cell 'ip_reset_sys/U0' Finished Parsing XDC File [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/reset_sys/reset_sys_board.xdc] for cell 'ip_reset_sys/U0' Parsing XDC File [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/reset_sys/reset_sys.xdc] for cell 'ip_reset_sys/U0' Finished Parsing XDC File [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/obj/ip/reset_sys/reset_sys.xdc] for cell 'ip_reset_sys/U0' 
+// Tcl Message: INFO: [Timing 38-2] Deriving generated clocks 
+// Tcl Message: Parsing XDC File [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/constrs/arty-config.xdc] Finished Parsing XDC File [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/constrs/arty-config.xdc] 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/constrs/arty-config.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: Parsing XDC File [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/constrs/arty-master.xdc] Finished Parsing XDC File [/home/ICer/ic_prjs/e203_MOD/fpga/artydevkit/constrs/arty-master.xdc] 
+// Tcl Message: INFO: [Timing 38-2] Deriving generated clocks 
+// Tcl Message: Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 7307.453 ; gain = 0.000 ; free physical = 9057 ; free virtual = 20887 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 51 instances were transformed.   FDR => FDRE: 12 instances   IOBUF => IOBUF (IBUF, OBUFT): 38 instances   SRL16 => SRL16E: 1 instances  
+// TclEventType: STOP_PROGRESS_DIALOG
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:50 ; elapsed = 00:00:39 . Memory (MB): peak = 7369.480 ; gain = 593.457 ; free physical = 8954 ; free virtual = 20784 
+// Tcl Message: 248 Infos, 116 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:00:44 . Memory (MB): peak = 7369.480 ; gain = 706.840 ; free physical = 8954 ; free virtual = 20784 
+// Elapsed time: 18 seconds
+dismissDialog("Sourcing Tcl script 'script/init_setup.tcl'"); // by (cl)
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// D (cl): Invalid Top Module: addNotify
+// Elapsed time: 14 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (D)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Invalid Top Module"); // D (cl)

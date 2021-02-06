@@ -26,4 +26,18 @@ make install CORE=e203 FPGA_NAME=artydevkit
 
 make mcs     CORE=e203 FPGA_NAME=artydevkit 
 
+make setup   CORE=e203 FPGA_NAME=artydevkit 
+
+================
+
+================
+
+For my_325t:
+
+make install CORE=e203 FPGA_NAME=my_325t
+
+make mcs     CORE=e203 FPGA_NAME=my_325t 
+
+make setup   CORE=e203 FPGA_NAME=my_325t
+
 ================
