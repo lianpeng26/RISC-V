@@ -670,8 +670,10 @@ module system
     .T(~dut_io_pads_gpio_17_o_oe)
   );
   assign dut_io_pads_gpio_17_i_ival = iobuf_gpio_17_o & dut_io_pads_gpio_17_o_ie;
+  */
   assign uart_rxd_out = (dut_io_pads_gpio_17_o_oval & dut_io_pads_gpio_17_o_oe);
 
+/*
   wire iobuf_gpio_18_o;
   IOBUF
   #(

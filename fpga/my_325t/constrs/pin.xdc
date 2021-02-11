@@ -42,14 +42,10 @@ set_property -dict { PACKAGE_PIN P20   IOSTANDARD LVCMOS33 } [get_ports { ja_0 }
 set_property -dict { PACKAGE_PIN T25   IOSTANDARD LVCMOS33 } [get_ports { ja_1 }]; #IO_L4P_T0_15 Sch=ja[2]
 
 ##Pmod Header JD        -------- ok
-set_property -dict { PACKAGE_PIN N19    IOSTANDARD LVCMOS33 } [get_ports { jd_0 }]; #IO_L11N_T1_SRCC_35 Sch=jd[1]
-#set_property -dict { PACKAGE_PIN M21    IOSTANDARD LVCMOS33 } [get_ports { jd_1 }]; #IO_L12N_T1_MRCC_35 Sch=jd[2]
-set_property -dict { PACKAGE_PIN K26    IOSTANDARD LVCMOS33 } [get_ports { jd_2 }]; #IO_L13P_T2_MRCC_35 Sch=jd[3]
-#set_property -dict { PACKAGE_PIN F3    IOSTANDARD LVCMOS33 } [get_ports { jd_3 }]; #IO_L13N_T2_MRCC_35 Sch=jd[4]
-set_property -dict { PACKAGE_PIN M20    IOSTANDARD LVCMOS33 } [get_ports { jd_4 }]; #IO_L14P_T2_SRCC_35 Sch=jd[7]
-set_property -dict { PACKAGE_PIN N16    IOSTANDARD LVCMOS33 } [get_ports { jd_5 }]; #IO_L14N_T2_SRCC_35 Sch=jd[8]
-#set_property -dict { PACKAGE_PIN    IOSTANDARD LVCMOS33 } [get_ports { jd_6 }]; #IO_L15P_T2_DQS_35 Sch=jd[9]
-#set_property -dict { PACKAGE_PIN G2    IOSTANDARD LVCMOS33 } [get_ports { jd_7 }]; #IO_L15N_T2_DQS_35 Sch=jd[10]
+set_property -dict { PACKAGE_PIN N19    IOSTANDARD LVCMOS33 } [get_ports { jd_0 }]; #IO_L11N_T1_SRCC_35 Sch=jd[1]   TDO
+set_property -dict { PACKAGE_PIN K26    IOSTANDARD LVCMOS33 } [get_ports { jd_2 }]; #IO_L13P_T2_MRCC_35 Sch=jd[3]   TCK
+set_property -dict { PACKAGE_PIN M20    IOSTANDARD LVCMOS33 } [get_ports { jd_4 }]; #IO_L14P_T2_SRCC_35 Sch=jd[7]   TDI
+set_property -dict { PACKAGE_PIN N16    IOSTANDARD LVCMOS33 } [get_ports { jd_5 }]; #IO_L14N_T2_SRCC_35 Sch=jd[8]   TMS
 
 ##USB-UART Interface (FTDI FT2232H)         -------- OK
 set_property -dict { PACKAGE_PIN M24   IOSTANDARD LVCMOS33  } [get_ports { uart_rxd_out }]; #IO_L19N_T3_VREF_16 Sch=uart_rxd_out
