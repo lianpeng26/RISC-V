@@ -1,4 +1,4 @@
-Note
+### 1. Note
 ================
 
 This project will no longer be updated and maintained in this repository. 
@@ -7,7 +7,7 @@ About the new version, please refer to the [RISCV-MCU/e203_hbirdv2](https://gith
 
 
 
-
+首先感谢芯来开源了蜂鸟E203 risc-v处理器，提供了比较完整的工程环境、配套的软硬件。
 
 
 
