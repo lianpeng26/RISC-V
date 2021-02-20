@@ -1,9 +1,9 @@
-### 1. Note
+### 1. 摘要
 ================
 
-This project will no longer be updated and maintained in this repository. 
+该开源RISC-v处理器是从蜂鸟E203修改而来，为了低成本学习RISC-V，主要修改仿真工具和FPGA环境，并移植到自己的FPGA上，目前成功运行hello word程序.
 
-About the new version, please refer to the [RISCV-MCU/e203_hbirdv2](https://github.com/riscv-mcu/e203_hbirdv2).
+但是蜂鸟E200最新的版本请到芯来官方github上获取[RISCV-MCU/e203_hbirdv2](https://github.com/riscv-mcu/e203_hbirdv2).
 
 
 
