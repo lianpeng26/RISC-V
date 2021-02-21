@@ -1,20 +1,15 @@
 ### 1. 摘要
 ================
 
-该开源RISC-v处理器是从蜂鸟E203修改而来，为了低成本学习RISC-V，主要修改仿真工具和FPGA环境，并移植到自己的FPGA上，目前成功运行hello word程序.
+- 该开源RISC-V处理器是蜂鸟E203修改版本，主要修改仿真工具，使用vcs+verdi进行仿真；为了低成本学习RISC-V，也修改FPGA综合环境，将其移植到自己的FPGA板卡上，非芯来淘宝指定的板卡，目前成功运行hello word程序.
 
-但是蜂鸟E200最新的版本请到芯来官方github上获取[RISCV-MCU/e203_hbirdv2](https://github.com/riscv-mcu/e203_hbirdv2).
-
-
-
-首先感谢芯来开源了蜂鸟E203 risc-v处理器，提供了比较完整的工程环境、配套的软硬件。
+- 但是如果需要蜂鸟E200最新的版本，请到芯来官方Github上获取：[RISCV-MCU/e203_hbirdv2](https://github.com/riscv-mcu/e203_hbirdv2).
 
 
-
-Hummingbird E203 Opensource Processor Core
 ================
 
-About
+### 2.我的硬件
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0221/210011_dd96f913_5033787.jpeg "IMG20210217111420.jpg")
 -----------
 
 This repository hosts the project for open-source hummingbird E203 RISC processor Core.
